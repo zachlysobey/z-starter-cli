@@ -1,6 +1,10 @@
-const chalk = require('chalk')
-const inquirer = require('inquirer')
-const figlet = require('figlet')
+import chalk from 'chalk'
+import inquirer from 'inquirer'
+import figlet from 'figlet'
+
+interface Answers {
+    name: string
+}
 
 const packageJson = require('../package.json')
 
@@ -14,10 +18,11 @@ const questions = [
     },
 ]
 
+
 ;(async function main() {
     try {
         printAsciiArt(packageJson.name)
-        const answers = await inquirer.prompt(questions)
+        const answers: Answers = await inquirer.prompt(questions)
         console.log(`Hello, ${chalk.green(answers.name)}`)
     } catch (e) {
         console.error('Fatal Error', e)
@@ -25,6 +30,6 @@ const questions = [
     }
 })()
 
-function printAsciiArt(content) {
+function printAsciiArt(content: string) {
     console.log(chalk.cyan(figlet.textSync(content)))
 }

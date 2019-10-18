@@ -4,19 +4,26 @@
   "scripts": {
     "test": "mocha",
     "test:watch": "npm run test -- --watch",
-    "start": "node src/main.js",
+    "start": "ts-node src/main.ts",
     "precommit": "npm test && lint-staged",
-    "prettier": "prettier --write **/*.{js,json,md,yml,yaml}"
+    "prettier": "prettier --write **/*.{js,ts,json,md,yml,yaml}"
   },
   "author": "Zach Lysobey <zach@lysobey.com> (http://zach.lysobey.com)",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/figlet": "^1.2.0",
+    "@types/inquirer": "^6.5.0",
+    "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "mocha": "^6.2.1",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
   },
   "dependencies": {
     "chalk": "^2.4.2",

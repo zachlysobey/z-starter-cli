@@ -1,6 +1,6 @@
-const { expect } = require('./test-setup')
+import { expect } from './test-setup'
 
-describe('main.js', function() {
+describe('main.ts', function() {
     it('is going to need some tests', function() {
         expect(1 + 1).to.equal(2)
     })
