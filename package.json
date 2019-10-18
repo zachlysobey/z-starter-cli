@@ -17,5 +17,8 @@
     "lint-staged": "^9.4.2",
     "mocha": "^6.2.1",
     "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2"
   }
 }

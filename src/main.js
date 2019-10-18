@@ -1,1 +1,3 @@
-console.log('Hello, World')
+const chalk = require('chalk')
+
+console.log('Hello,', chalk.green('World!'))
