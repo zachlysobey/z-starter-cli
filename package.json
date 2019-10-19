@@ -1,6 +1,6 @@
 {
   "name": "z-starter-cli",
-  "version": "0.0.12",
+  "version": "1.0.0",
   "scripts": {
     "test": "mocha",
     "test:watch": "npm run test -- --watch",
