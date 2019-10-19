@@ -1,18 +1,15 @@
-# change-me
+# 🕶 𝓩-Starter-CLI 🕶
 
-[![Actions Status](https://github.com/zachlysobey/z-starter/workflows/Node%20CI/badge.svg)](https://github.com/zachlysobey/z-starter/actions)
+[![Actions Status](https://github.com/zachlysobey/z-starter-cli/workflows/Node%20CI/badge.svg)](https://github.com/zachlysobey/z-starter-cli/actions)
 
-## TODO
-
--   [ ] change "name" in `package.json`
--   [ ] change the title of this README
--   [ ] update the "Action Status" badge svg url to point at the correct repo
--   [ ] delete this TODO section (_use GitHub issues, or something intead_)
+_a CLI tool for my [`z-starter`](https://github.com/zachlysobey/z-starter) JS starter-template project_
 
 ## Usage
 
+Intended for use as a _global_ npm script.
+
 ```
-npm start
+npm install --global z-starter-cli
 ```
 
 ## Available npm scripts

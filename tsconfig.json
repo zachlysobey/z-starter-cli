@@ -9,6 +9,9 @@
         "strict": true,
         "types": ["node", "mocha"],
         "esModuleInterop": true,
-        "resolveJsonModule": true
-    }
+        "resolveJsonModule": true,
+        "noImplicitAny": false
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": ["./src/**/*.test.ts", "./src/**/test-setup.ts"]
 }

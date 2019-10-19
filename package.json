@@ -1,12 +1,16 @@
 {
-  "name": "change-me",
-  "version": "0.0.1",
+  "name": "z-starter-cli",
+  "version": "0.0.11",
   "scripts": {
     "test": "mocha",
     "test:watch": "npm run test -- --watch",
     "start": "ts-node src/main.ts",
+    "build": "tsc",
     "precommit": "npm test && lint-staged",
     "prettier": "prettier --write **/*.{js,ts,json,md,yml,yaml}"
+  },
+  "bin": {
+    "z-starter-cli": "./lib/main.js"
   },
   "author": "Zach Lysobey <zach@lysobey.com> (http://zach.lysobey.com)",
   "license": "ISC",
@@ -28,6 +32,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "figlet": "^1.2.4",
-    "inquirer": "^7.0.0"
+    "inquirer": "^7.0.0",
+    "simple-git": "^1.126.0"
   }
 }
