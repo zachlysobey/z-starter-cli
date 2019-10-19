@@ -4,6 +4,13 @@
 
 _a CLI tool for my [`z-starter`](https://github.com/zachlysobey/z-starter) JS starter-template project_
 
+## How it works
+
+The basic mechanics of this project are pretty simple, and just wrap some fairly basic git features in a nice to use CLI.
+
+When `z-starter-cli` is invoked within a git project, it will add a new _git remote repsoitory_: the `z-starter` one.
+The, it will ask you to chose from the different template branches in that repo. Once a choice is made, the git history of the current branch is _reset_ to the one specificed from `z-starter`.
+
 ## Usage
 
 Intended for use as a _global_ npm script.
