@@ -15,6 +15,10 @@
   },
   "author": "Zach Lysobey <zach@lysobey.com> (http://zach.lysobey.com)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zachlysobey/z-starter-cli"
+  },
   "devDependencies": {
     "@types/chai": "^4.2.3",
     "@types/chai-as-promised": "^7.1.2",
